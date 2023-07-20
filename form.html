@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <title>Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <header>Enter Your Details</header>
+
+        <form action=""method="post" class="form">
+            <div class="column">
+                <div class="input-box">
+                    <label >First Name</label>
+                    <input type="text" placeholder="Enter Your First Name" required>
+                    </div>
+                    <div class="input-box">
+                    <label >Parent's First Name</label>
+                    <input type="text" placeholder="Enter your middle name">
+                    </div>        
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label >Middle Name</label>
+                    <input type="text" placeholder="Enter your middle name" >
+                    </div>
+                    <div class="input-box">
+                    <label >Parent's Middle Name</label>
+                    <input type="text" placeholder="Enter your middle name">
+                    </div>        
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label >Last Name</label>
+                    <input type="text" placeholder="Enter your last name" required>
+                    </div> 
+                    <div class="input-box">
+                    <label >Parent's Last Name</label>
+                    <input type="text" placeholder="Enter your middle name">
+                    </div>        
+            </div>
+             
+            <div class="input-box">
+                <label >Email</label>
+                <input type="email" placeholder="Enter your email address" required>
+                </div>
+           
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="+91 789981xxx" required>
+                    </div>
+                    <div class="input-box">
+                        <label >Adhaar Number </label>
+                        <input type="number" placeholder="Enter your adhaar number" required>
+                        </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label >Age</label>
+                    <input type="number" placeholder="Enter your age" required>
+                    </div>
+                <div class="input-box">
+                    <label >DOB</label>
+                    <input type="date" placeholder="Enter Your First Name" required>
+                    </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" name="gender" id="check-male" checked>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="check-female">
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="check-other">
+                        <label for="check-other">Perfer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <label >Address</label>
+                <input type="text" placeholder="Enter your permenant address" required>
+                <input type="text" placeholder="Enter your current address" required>
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option value="">Country</option>
+                            <option value="">America</option>
+                            <option value="">India</option>
+                            <option value="">Pakistan</option>
+                            <option value="">Bangladesh</option>
+                            <option value="">Nepal</option>
+                            <option value="">Japan</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Enter your city" required>
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Enter your state" required>
+                <input type="number" placeholder="Enter your postal code" required>
+                </div>
+                </div>
+
+                <div class="skills-box">
+                    <h3>Choose your skills</h3>
+                    <div class="skills-option">
+                        <div class="lang">
+                            <input type="checkbox" name="skills" id="python">
+                            <label for="python">Python</label>
+                        </div>
+                        <div class="lang">
+                            <input type="checkbox" name="skills" id="lang">
+                            <label for="lang">C/C++</label>
+                        </div>
+                        <div class="lang">
+                            <input type="checkbox" name="skills" id="web">
+                            <label for="web">Web Development</label>
+                        </div>
+                     </div>
+
+                     <div class="upload">
+                        <h3>Upload CV</h3>
+                        <input type="file" accept=".pdf,.docx,application/msword"><span>
+                            (Only PDF or DOCX files are accepted)
+                        </span>
+                        <span style='color:red;'>
+                        *Note : Please make sure that the uploaded file is not corrupted.</span>
+
+                     </div>
+                     <div class="feedback">
+                        <h3>Any questions?</h3>
+                        <textarea rows="4" cols="50">Enter Your Message......</textarea>
+                     </div>
+                
+                <div class="agree-box">
+                    <input type="radio" name="agree" id="check-agree" required>
+                    <label for="check-agree">I agree for terms and conditions</label>
+                </div>
+               
+
+                <button onclick="nextPage()" type="submit">Submit</button>
+            
+        </form>
+    </section>
+    <script>
+        function nextPage() {
+            location.replace("/thankYou.html")
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+            
+
+
+           
+
+
+
+
+            
+     
+
+
